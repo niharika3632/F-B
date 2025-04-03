@@ -6,14 +6,25 @@
         sans-serif, 'Courier New', Courier, monospace;
 }
 
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 4.5rem 0 1.5rem;
+}
+
 .navbar {
     background-color: white;
     height: 50px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-    position: sticky;
+    font-size: 14px;
+    position: fixed;
     top: 0;
     z-index: 999;
 }
@@ -25,14 +36,13 @@
     z-index: 1;
     width: 100%;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 #navbar__logo img {
     width: 60px;
     height: auto;
-
-    
+    left: 10px;
 }
 
 .navbar__menu {
@@ -43,7 +53,7 @@
 }
 
 .navbar__item {
-    height: 80px;
+    height: 50px;
 }
 
 .navbar__link {
@@ -54,7 +64,7 @@
     text-decoration: none;
     padding: 0 32px;
     height: 100%;
-    font: 16px "Gill Sans",
+    font: 14px "Gill Sans",
         sans-serif;
     font-weight: 500;
 
@@ -92,4 +102,39 @@
     height: auto;
     margin: 0 auto;
     border-radius: 10px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    color: black;
+}
+
+.container img {
+    position: absolute;
+}
+
+#home1 {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 900px;
+    top: 50px;
+    right: 900px;
+}
+
+#home2 {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 600px;
+    top: 100px;
 }

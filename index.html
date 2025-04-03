@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>f&b</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -39,15 +40,30 @@
         </div>
     </nav>
 
+    <!-- HOME -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
 
-    <div class="main">
-        <div class="main__container">
-            <div class="main_content">
-                <a id="hello"><img src="img/hello.jpg" alt="hello"></a>
+            <!-- slide 1 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>We are Genius</span>
+                    <a id="home1"><img src="img/home1.png" alt="home1"></a>
+                </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>We are not Genius</span>
+                    <a id="home2" ><img src="img/home2.png" alt="home2"></a>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
