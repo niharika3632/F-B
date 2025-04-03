@@ -1,140 +1,145 @@
+/* Global Styles */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Gill Sans",
-        sans-serif, 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
 }
 
-html,
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+/* Buttons */
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s ease;
+}
+
 body {
     width: 100%;
-    overflow-x: hidden;
 }
 
-section {
-    padding: 4.5rem 0 1.5rem;
-}
-
-.navbar {
-    background-color: white;
-    height: 50px;
-    width: 100%;
+/* Navbar */
+#header {
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 14px;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-}
-
-.navbar__container {
-    display: flex;
     justify-content: space-between;
-    height: 50px;
-    z-index: 1;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
+    background: #f2f1f1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    height: 60px;
 }
 
-#navbar__logo img {
-    width: 60px;
+.logo {
+    width: 90px;
     height: auto;
-    left: 10px;
 }
 
-.navbar__menu {
+/* Navbar Links */
+#navbar {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+/* Remove underline from links */
+#navbar li {
     list-style: none;
-    text-align: center;
-}
-
-.navbar__item {
-    height: 50px;
-}
-
-.navbar__link {
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 0 32px;
-    height: 100%;
-    font: 14px "Gill Sans",
-        sans-serif;
-    font-weight: 500;
-
-}
-
-.navbar__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 100px;
-    width: 100%;
-    position: absolute;
-    right: 10px;
-
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: 1px solid;
-    border-radius: 0.2pc;
-    background-color: black;
-    color: white;
-}
-
-#hello img {
-    display: block;
-    width: 1200px;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-.container {
+    padding: 0 15px;
     position: relative;
-    width: 100%;
-    min-height: 520px;
-    display: flex;
+}
+
+#navbar li a {
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: color 0.3s ease;
+    padding: 10px 0;
+}
+
+/* Hover & Active State */
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+/* Optional: Underline effect only if needed */
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    display: none;
+    /* Hide underline effect */
+}
+
+/* Mobile Menu */
+#close {
+    display: none;
+}
+
+#mobile {
+    display: none;
     align-items: center;
-    background: rgb(255, 255, 255);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: auto;
-    color: black;
-}
-
-.container img {
-    position: absolute;
-}
-
-#home1 {
-    width: 100px;
-    height: auto;
-    position: absolute;
-    right: 900px;
-    top: 50px;
-    right: 900px;
-}
-
-#home2 {
-    width: 100px;
-    height: auto;
-    position: absolute;
-    right: 600px;
-    top: 100px;
 }

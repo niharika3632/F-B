@@ -1,70 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>f&b</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <title>Document</title>
 </head>
-
 <body>
 
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="/" id="navbar__logo"><img src="img/logo.png" alt="logo"></a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span id="bar"></span>
-                <span id="bar"></span>
-                <span id="bar"></span>
-                <span id="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="/" class="navbar__link">HOME</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/fashion" class="navbar__link">FASHION</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/inventions" class="navbar__link">INVENTIONS</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/inators" class="navbar__link">INATORS</a>
-                </li>
-                <li class="navbar_btn">
-                    <a href="/" class="button">SIGN UP</a>
-                </li>
+    <section id="header">
+        <a href="/"><img src="img/logo.png" class="logo" alt="phinease and ferb logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a class="active" href="fashion.html">FASHION</a></li>
+                <li><a class="active" href="invention.html">INVENTION</a></li>
+                <li><a class="active" href="doofenshmirtz.html">DOOFENSHMIRTZ</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="/" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
-    </nav>
-
-    <!-- HOME -->
-    <section class="home swiper" id="home">
-        <div class="swiper-wrapper">
-
-            <!-- slide 1 -->
-            <div class="swiper-slide container">
-                <div class="home-text">
-                    <span>We are Genius</span>
-                    <a id="home1"><img src="img/home1.png" alt="home1"></a>
-                </div>
-            </div>
-            <!-- slide 2 -->
-            <div class="swiper-slide container">
-                <div class="home-text">
-                    <span>We are not Genius</span>
-                    <a id="home2" ><img src="img/home2.png" alt="home2"></a>
-                </div>
-            </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
 
+</body>
 </html>
