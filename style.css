@@ -8,7 +8,7 @@
 
 .navbar {
     background-color: white;
-    height: 80px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,20 +21,16 @@
 .navbar__container {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 50px;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
 }
 
-#navabar__logo img {
-    width: 110px;
+#navbar__logo img {
+    width: 60px;
     height: auto;
-    position: relative;
-    top: -15px;
-    left: -90px;
 
     
 }
@@ -80,7 +76,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 10px 20px;
     height: 100%;
     width: 100%;
     border: none;
@@ -90,3 +86,10 @@
     color: white;
 }
 
+#hello img {
+    display: block;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
